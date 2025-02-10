@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>froms</title>
+    <style>
+        /* General body styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        /* Form container */
+        form {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+        }
+
+        /* Form element styles */
+        div {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="tel"],
+        input[type="email"],
+        input[type="password"],
+        input[type="date"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        /* Styling the radio and checkbox labels */
+        p {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        /* Button styling */
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #072108;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        /* Terms and comments adjustments */
+        #terms {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Form starts here -->
+    <!--must write action here and backend where we need to store all the data -->
+    <form action="/submit.php">
+        <div>
+            <label for="name">Name</label>
+            <input id="name" type="text" placeholder="enter name" required>
+            <!-- here id name and for name should be same to use it -->
+        </div>
+        <div>
+            <!--phone input-->
+            <label for="ph">phone</label>
+            <input id="ph" type="tel" placeholder="enter your phone number" required </div>
+            <div>
+                <label for="eamil">eamil</label>
+                <input id="eamil" type="eamil" placeholder="enter your eamil" required </div>
+                <div>
+                    <label for="dob">date of birth</label>
+                    <input id="dob" type="date" required </div>
+                    <!-- Password input -->
+                    <div>
+                        <label for="password">Password</label>
+                        <input id="password" type="password" placeholder="Enter Password" required>
+                    </div>
+                    <!-- Dropdown (select input) for Gender -->
+                    <div>
+                        <label for="gender">Gender</label>
+                        <select type="gender" required>
+                            <option value="" disable selected>select</option>
+                            <option value="male">male</option>
+                            <option value="" female>female</option>
+                        </select>
+                    </div>
+                    <div>
+                        <!-- Radio buttons for Subscription Plan -->
+                        <p>Collage student ?</p>
+                        <input id="yes" type="radio" name="collage" value="yes">
+                        <label for="yes">Yes</label>
+
+                        <input id="no" type="radio" name="collage" value="no">
+                        <label for="no">NO</label>
+                        <!--if remove name from label for then we have select the option by clicking on the circle
+                        and if not then we can click on it name then also it will select that option-->
+                    </div>
+                    <!--area of your collage name-->
+                    <div>
+                        <label for="collage name">Collage name</label>
+                        <input for="colage name" type="name" placeholder="enter your collage name "
+                    </div>
+                    
+                    <!-- Textarea for Comments -->
+                    <div>
+                        <label for="comments">review of your collage</label>
+                        <textarea id="comments" placeholder="Enter your comments" rows="4"></textarea>
+                    </div>
+                    <!-- Checkbox for agreeing to terms -->
+                    <div>
+                        <input id="terms" type="checkbox" required>
+                        <label for="terms">I agree to the terms and conditions</label>
+                    </div>
+
+                    <!-- Submit button -->
+                    <div>
+                        <button type="submit">Submit</button>
+                    </div>
+    </form>
+</body>
+
+</html>
