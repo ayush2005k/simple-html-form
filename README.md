@@ -1,10 +1,4 @@
 # simple-html-form
-A simple and responsive form built using HTML and CSS, featuring multiple input fields, validation, and modern styling for an improved user experience."  Let me know if you'd like a different description! 🚀
-Simple HTML & CSS Form
-
-Repository Name
-
-html-css-form-project
 
 Project Description
 
@@ -50,7 +44,7 @@ How to Use
 
 Clone the repository:
 
-git clone https://github.com/your-username/html-css-form-project.git
+git clone https://github.com/ayush2005k/html-css-form-project.git
 
 Open the index.html file in your browser.
 
